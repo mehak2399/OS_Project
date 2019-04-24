@@ -1,0 +1,20 @@
+#include <bits/stdc++.h> // includes every standard library
+using namespace std;
+class Need
+{
+int Num;
+int ProcessId; //Process Id
+int ArrivalTime; //Process Arrival Time
+int BurstTime; //Process Bruest Time
+int Priority; //Process Priority
+int FinishTime; //Process Finish Time
+int RemainingTime; //Process Remaining Time During Execution
+int WatingTime; //Waiting Time
+int StartTime; //Process start Time
+int Res_time;
+}current;
+typedef Need P_d ;
+bool idsort(const P_d& x , const P_d& y)
+{
+return x.Pid < y.Pid;
+}
